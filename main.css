@@ -40,7 +40,7 @@ nav.menu ul li a:hover  {
 header.hero {
     height: 350px;
     background-color: #b4c6f0;
-    background-image: url('/bg.png');
+    background-image: url('./bg.png');
     background-size: 400px;
     background-repeat: no-repeat;
     background-position: center bottom;
@@ -79,6 +79,8 @@ header.hero h2 {
     padding: 40px;
 } */
 
+
+
 .center {
     text-align: center;
 }
@@ -101,6 +103,6 @@ footer{
 @media screen and (min-width: 768px) {
     .container .page-area .text-box {
         margin: 10px;
-        color: #e61307;
+        color: #e61307; /*This is A11Y Change*/
     }
 }
