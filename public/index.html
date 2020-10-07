@@ -139,7 +139,7 @@
             });
         };
         function getBudget(){
-            axios.get('/budget')
+            axios.get('http://localhost:3000/budget')
             .then(function(res){
                 for(var i=0;i<res.data.myBudget.length;i++){
                     dataSource.datasets[0].data[i] = res.data.myBudget[i].budget;
@@ -156,7 +156,7 @@
     var color;
 
     function getBudget1() {
-      axios.get("/budget").then(function (res) {
+      axios.get("http://localhost:3000/budget").then(function (res) {
         for (var i = 0; i < res.data.myBudget.length; i++) {
           data_budget.push(res.data.myBudget[i].budget);
           labels.push(res.data.myBudget[i].title);
